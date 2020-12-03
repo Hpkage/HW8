@@ -10,7 +10,7 @@ class Environment {
 public:	
 	void iterate();
 
-	void switchHeater();
+	void switchHeater(string heat);
 
 	int getTemp();
 

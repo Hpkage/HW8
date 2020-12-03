@@ -9,13 +9,8 @@ void Environment::iterate(){
 	}
 }
 
-void Environment::switchHeater() {
-	if (heater == "on") {
-		heater = "off";
-	}
-	else {
-		heater = "on";
-	}
+void Environment::switchHeater(string heat) {
+	heater = heat;
 }
 
 int Environment::getTemp() {

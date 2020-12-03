@@ -16,8 +16,8 @@ public:
 	void act(Environment& env);
 
 private:
-	int temperature;
-	string action;
+	int temperature = 0;
+	string action = "off";
 };
 
 #endif

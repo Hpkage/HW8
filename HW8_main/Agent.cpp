@@ -12,3 +12,7 @@ void Agent::think() {
 		action = "off";
 	}
 }
+
+void Agent::act(Environment& env) {
+	env.switchHeater(action);
+}

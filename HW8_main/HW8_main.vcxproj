@@ -141,11 +141,13 @@
   <ItemGroup>
     <ClCompile Include="Environment.cpp" />
     <ClCompile Include="Agent.cpp" />
+    <ClCompile Include="Simulator.cpp" />
     <ClCompile Include="Thermostat.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Environment.h" />
     <ClInclude Include="Agent.h" />
+    <ClInclude Include="Simulator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

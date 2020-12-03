@@ -7,9 +7,7 @@
 using std::string;
 
 class Environment {
-public:
-	Environment();
-	
+public:	
 	void iterate();
 
 	void switchHeater();
@@ -19,11 +17,8 @@ public:
 	void setTemp(int temp);
 
 private:
-	int temperature;
-	string heater;
+	int temperature = 0;
+	string heater = "off";
 };
-
-
-
 
 #endif

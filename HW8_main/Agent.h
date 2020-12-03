@@ -9,13 +9,14 @@ using std::string;
 
 class Agent {
 public:
-	int perceive(Environment& env);
+	void perceive(Environment& env);
 
 	void think();
 
 	void act(Environment& env);
 
 private:
+	int temperature;
 	string action;
 };
 

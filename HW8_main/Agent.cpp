@@ -1,5 +1,14 @@
 #include "Agent.h"
 
-int Agent::perceive(Environment& env) {
-	return env.getTemp();
+void Agent::perceive(Environment& env) {
+	temperature = env.getTemp();
+}
+
+void Agent::think() {
+	if (temperature < 60) {
+		action = "on";
+	}
+	else {
+		action = "off";
+	}
 }

@@ -17,3 +17,11 @@ void Environment::switchHeater() {
 		heater = "on";
 	}
 }
+
+int Environment::getTemp() {
+	return temperature;
+}
+
+void Environment::setTemp(int temp) {
+	temperature = temp;
+}

@@ -5,10 +5,10 @@ void Agent::perceive(Environment& env) {
 }
 
 void Agent::think() {
-	if (temperature < 60) {
+	if (temperature <= 60) {
 		action = "on";
 	}
-	else {
+	else if (temperature >= 75) {
 		action = "off";
 	}
 }

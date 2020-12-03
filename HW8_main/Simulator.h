@@ -12,6 +12,10 @@ class Simulator {
 public:
 	void askOwner();
 
+	int getTemp();
+
+	void run();
+
 private:
 	int temperature = 0;
 };

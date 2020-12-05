@@ -10,6 +10,8 @@ using std::sqrt;
 
 int main() {
 	double a, b, c;
+	cout << "This program is able to solve using the quadratic formula." << endl;
+	cout << "To end the program type in any letter." << endl;
 
 	while (true) {
 		cout << "Enter the coefficient of a: ";
@@ -20,7 +22,7 @@ int main() {
 		cin >> c;
 		cout << endl;
 		if (a == 0) {
-			cout << "UNDEFINED." << endl;
+			cout << "UNDEFINED." << endl << endl;
 			return 1;
 		}
 

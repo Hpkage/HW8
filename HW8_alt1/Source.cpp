@@ -12,21 +12,23 @@ int main() {
 	double a, b, c;
 
 	while (true) {
-		cout << "Enter the coefficient of a then b then c (Type in any letter to quit): ";
-		cin >> a >> b >> c;
+		cout << "Enter the coefficient of a: ";
+		cin >> a;
+		cout << "Enter the coefficient of b: ";
+		cin >> b;
+		cout << "Enter the coefficient of c: ";
+		cin >> c;
+		cout << endl;
 		if (a == 0) {
 			cout << "UNDEFINED." << endl;
 			return 1;
-		}
-		else if (a == 'end') {
-			break;
 		}
 
 		double x1, x2;
 		x1 = (-b + sqrt((b * b) - 4 * a * c)) / (2 * a);
 		x2 = (-b - sqrt((b * b) - 4 * a * c)) / (2 * a);
 
-		cout << "X = " << x1 << " and or X = " << x2 << endl;
+		cout << "X = " << x1 << " and or X = " << x2 << endl << endl;
 	}
 	return 0;
 }
